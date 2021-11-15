@@ -1,6 +1,6 @@
 package com.line.api;
 
-interface MessageService {
+public interface MessageService {
 
 	boolean pushMessage(String content, String to);
 

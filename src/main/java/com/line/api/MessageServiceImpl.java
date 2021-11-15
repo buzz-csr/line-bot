@@ -20,8 +20,7 @@ public class MessageServiceImpl implements MessageService {
 		BotApiResponse botApiResponse = null;
 		LineMessagingClient client = LineMessagingClient.builder(CHANNEL_TOKEN).build();
 
-		TextMessage textMessage = new TextMessage("hello");
-		PushMessage pushMessage = new PushMessage("U34b21f21232f2c9134cbb741eedfa6d2", textMessage);
+		PushMessage pushMessage = new PushMessage(to, new TextMessage(content));
 
 		try {
 			botApiResponse = client.pushMessage(pushMessage).get();
