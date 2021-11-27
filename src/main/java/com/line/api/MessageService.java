@@ -5,8 +5,8 @@ import com.linecorp.bot.model.message.TextMessage;
 
 public interface MessageService {
 
-	boolean pushMessage(TextMessage message, String to);
+	boolean pushMessage(TextMessage message);
 
-	boolean pushImage(ImageMessage imgMessage, String to);
+	boolean pushImage(ImageMessage imgMessage);
 
 }
